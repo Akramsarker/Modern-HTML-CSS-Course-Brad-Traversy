@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>target-selectors</title>
+    <style>
+        /* direct child */
+    div > p{
+        background: red;
+    }
+    /* directly  after*/
+    div + p{
+        background: red;
+        color: #fff;
+    }
+    
+     a[target] {
+         background: blue;
+         color: #fff;
+         padding: 5px;
+     }
+
+     /* normal child */
+     /* div p {
+         background: tomato;
+     } */
+
+     input {
+         width: 100%;
+         margin-top: 20px;
+     }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <ul>
+            <li>items-1</li>
+            <li><p>items-2</p></li>
+            <li>items-1</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+       <p>Lorem ipsum dolor sit amet.</p>
+
+       <a href="#">page one</a>
+       <a href="#" target="blank">page one</a>
+       <a href="www.google.com" target="blank">google</a>
+
+       <input type="text" placeholder="name">
+       <input type="email" placeholder="email">
+       <input type="button" value="buttom">
+</body>
+</html>

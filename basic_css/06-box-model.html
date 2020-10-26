@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>padding-margin-box-model</title>
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        } 
+      .box {
+          background: #cccccc;
+          border: 1px solid #f4f4f4;
+          width: 500px;
+
+          /* padding on all sides */
+          padding: 100px;
+          
+          /* padding  per side*/
+          padding-top: 20px;
+          padding-right: 10px;
+          padding-bottom: 20px;
+          padding-left: 10px;
+
+          /* paddind shorthand = top, right, bottom, left */
+
+          padding: 20px 10px 20px 10px;
+
+          /*paddind shorthand = top/bottom, left/right */
+          margin: 20px 10px;
+          
+
+          /* margin on all sides */
+          margin: 20px;
+
+         /* margin per side */
+          margin-top: 20px;
+          margin-right: 10px;
+          margin-bottom: 20px;
+          margin-left: 10px;
+
+          /* margin shorthand =top, right, bottom, left */
+          margin: 20px 10px 20px 10px;
+
+      }
+
+    </style>
+</head>
+<body>
+    <div id="box-1" class="box">
+        <h1>heading</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi aut nisi quo sunt similique aperiam minima reprehenderit pariatur. Porro, minus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique quisquam fugit iste, est possimus officia, delectus molestiae alias, sunt quas suscipit officiis beatae error ipsum neque aut corporis et ex?</p>
+    </div>
+    <div id="box-2" class="box">
+        <h1>heading</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque accusantium cupiditate earum corrupti ullam reiciendis saepe veniam. Facere, natus veritatis.</p>
+    </div>
+</body>
+</html>

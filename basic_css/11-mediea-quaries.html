@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>responsive disign</title>
+        <style>
+        body {
+            background: gray;
+            color: #fff;
+            font-size: 30px;
+            text-align: center;
+            padding-top: 100px;
+        }
+        h1 {
+            display: none;
+        }
+        @media (max-width: 500px){
+            body {
+                background: red;
+            }
+            #widescreen h1{
+                    display:block;
+            }
+        }
+
+        
+        @media (min-width: 501px) and (max-width: 768px) {
+            body {
+                background: blue;
+            }
+            #smartphone h1{
+                    display:block;
+            }
+        }
+        
+        @media (min-width: 769px) and (max-width: 960px){
+            body {
+                background:green;
+            }
+            #normal h1{
+                    display:block;
+            }
+        }
+        
+        @media (min-width: 961px) and (max-width: 1200px){
+            body {
+                background: tomato;
+            }
+            #laptop h1{
+                    display:block;
+            }
+        }
+
+            @media (min-width: 1201px) and (max-width: 1400px) {
+                body {
+                    background: tomato;
+                }
+                #tablet h1{
+                    display:block;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="widescreen"><h1>widescreen</h1></div>
+        <div id="smartphone"><h1>smartphone</h1></div>
+        <div id="tablet"><h1>tablet</h1></div>
+        <div id="laptop"><h1>laptop</h1></div>
+        <div id="normal"><h1>normal</h1></div>
+    </body>
+</html>
